@@ -14,18 +14,15 @@ import Bookings from "./pages/Bookings";
 import AppLayout from "./ui/AppLayout";
 import Cabins from "./pages/Cabins";
 
-const queryClient = new QueryClient(
-  {
-    defaultOptions: {
-      queries: {
-        staleTime: 0,
-      }
-    }
-  }
-)
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 0,
+    },
+  },
+});
 
 function App() {
-
   return (
     <QueryClientProvider client={queryClient}>
       {/* --save-dev */}
@@ -53,7 +50,7 @@ function App() {
         position="top-center"
         gutter={12}
         containerStyle={{
-          margin: "8px"
+          margin: "8px",
         }}
         toastOptions={{
           success: {
@@ -68,7 +65,7 @@ function App() {
             padding: "16px 24px",
             backgroundColor: "var(--color-grey-0)",
             color: "var(--color-grey-700)",
-          }
+          },
         }}
       />
     </QueryClientProvider>
