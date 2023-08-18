@@ -51,7 +51,8 @@ export default function Filter({ filterField, options = [] }) {
 			{options.map((option) => (
 				<FilterButton
 					onClick={() => handleClick(option.value)}
-					active={option.value === currentFilter}
+					active={option.value === currentFilter} // why i need toString ?
+					disabled={option.value === currentFilter}
 					key={option.value}
 				>
 					{option.label}

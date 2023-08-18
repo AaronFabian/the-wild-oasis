@@ -75,8 +75,6 @@ function CabinRow({ cabin }) {
 		});
 	}
 
-	console.log(isCreating);
-
 	return (
 		<Table.Row>
 			<Img src={image} onError={(e) => (e.target.src = "/notfound.webp")} />
@@ -96,6 +94,7 @@ function CabinRow({ cabin }) {
 						<Menus.List id={cabinId}>
 							<Modal.Open opens="edit">
 								<Menus.Button
+									disabled={isCreating}
 									icon={<HiSquare2Stack />}
 									onClick={handleDuplicate}
 								>
@@ -104,11 +103,15 @@ function CabinRow({ cabin }) {
 							</Modal.Open>
 
 							<Modal.Open opens="edit">
-								<Menus.Button icon={<HiPencil />}>Edit</Menus.Button>
+								<Menus.Button disabled={isCreating} icon={<HiPencil />}>
+									Edit
+								</Menus.Button>
 							</Modal.Open>
 
 							<Modal.Open opens="delete">
-								<Menus.Button icon={<HiTrash />}>Delete</Menus.Button>
+								<Menus.Button icon={<HiTrash />} disabled={isCreating}>
+									Delete
+								</Menus.Button>
 							</Modal.Open>
 						</Menus.List>
 

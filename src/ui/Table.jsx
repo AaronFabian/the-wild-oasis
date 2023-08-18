@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { createContext, useContext } from "react";
 import styled from "styled-components";
+import Empty from "./Empty";
 
 const StyledTable = styled.div`
 	border: 1px solid var(--color-grey-200);
@@ -92,7 +93,8 @@ function Row({ children }) {
 }
 
 function Body({ data, render }) {
-	if (!data.length) return <h1>No data to show at the moment</h1>;
+	if (!data.length)
+		return <Empty resourceName="data">No data to show at the moment</Empty>;
 	return <StyledRow>{data.map(render)}</StyledRow>;
 }
 
