@@ -20,9 +20,33 @@
 
 ## Link Website
 
-https://ice-chocolate.com
+the-wild-oasis-fabian.vercel.app
 
 ## Screenshot
+
+| Login Page                            |
+| ------------------------------------- |
+| ![login page](public/pages/login.png) |
+
+| Dashboard Page                                |
+| --------------------------------------------- |
+| ![dashboard page](public/pages/dashboard.png) |
+
+| Bookings Page                               |
+| ------------------------------------------- |
+| ![bookings page](public/pages/bookings.png) |
+
+| Cabins Page                             |
+| --------------------------------------- |
+| ![cabins page](public/pages/cabins.png) |
+
+| Create User Page                            |
+| ------------------------------------------- |
+| ![login page](public/pages/create-user.png) |
+
+| Edit Profile Page                           |
+| ------------------------------------------- |
+| ![login page](public/pages/update-user.png) |
 
 ## Installation
 
