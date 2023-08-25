@@ -105,6 +105,26 @@ function CheckinBooking() {
 				</Box>
 			)}
 
+			{hasBreakfast && (
+				<Box>
+					<Checkbox
+						checked={confirmPaid}
+						onChange={() => setConfirmPaid((confirm) => !confirm)}
+						disabled={confirmPaid || isCheckingIn}
+						id="confirm"
+					>
+						I confirm that {guests.fullName} has paid the total amount of{" "}
+						{!addBreakfast
+							? formatCurrency(totalPrice)
+							: `${formatCurrency(
+									totalPrice + optionalBreakfastPrice
+							  )} (${formatCurrency(totalPrice)} + ${formatCurrency(
+									optionalBreakfastPrice
+							  )})`}
+					</Checkbox>
+				</Box>
+			)}
+
 			<ButtonGroup>
 				<Button disabled={!confirmPaid || isCheckingIn} onClick={handleCheckin}>
 					Check in booking #{bookingId}

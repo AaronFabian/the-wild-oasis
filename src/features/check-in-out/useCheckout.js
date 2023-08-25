@@ -12,11 +12,11 @@ export function useCheckout() {
 
 		// the data is the return data from the function apiBooking
 		onSuccess: (data) => {
-			toast.success(`Booking #${data.id} successfully checked in`);
+			toast.success(`Booking #${data.id} successfully checkout`);
 			queryClient.invalidateQueries({ active: true });
 		},
 
-		onError: () => toast.error("There was an error while checkout in"),
+		onError: () => toast.error("There was an error while checkout"),
 	});
 
 	return { checkout, isCheckingOut };
