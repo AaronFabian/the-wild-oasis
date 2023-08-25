@@ -20,7 +20,7 @@
 
 ## Link Website
 
-the-wild-oasis-fabian.vercel.app
+https://the-wild-oasis-fabian.vercel.app
 
 ## Screenshot
 
