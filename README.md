@@ -22,6 +22,10 @@
 
 https://the-wild-oasis-fabian.vercel.app
 
+| Email Address  | Password |
+| -------------- | -------- |
+| test@gmail.com | 12345678 |
+
 ## Screenshot
 
 | Login Page                            |
