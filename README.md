@@ -57,12 +57,16 @@ https://the-wild-oasis-fabian.vercel.app
 Clone and move to the repository
 
 ```bash
-git clone https://github.com/AaronFabian/the-wild-oasis.git
-cd the-wild-oasis
+git clone https://github.com/AaronFabian/the-wild-oasis.git;
+cd the-wild-oasis;
+```
 
 # install packages
+```bash
 npm i
+```
 
 # run the server
+```bash
 npm run dev
 ```
